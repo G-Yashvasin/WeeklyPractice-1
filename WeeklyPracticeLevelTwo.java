@@ -5,22 +5,18 @@ public class WeeklyPracticeLevelTwo {
 
         Scanner sc = new Scanner(System.in);
 
-        double number1, number2;
+        double base, height;
 
-        System.out.print("Enter first number: ");
-        number1 = sc.nextDouble();
+        System.out.print("Enter base in cm: ");
+        base = sc.nextDouble();
 
-        System.out.print("Enter second number: ");
-        number2 = sc.nextDouble();
+        System.out.print("Enter height in cm: ");
+        height = sc.nextDouble();
 
-        double addition = number1 + number2;
-        double subtraction = number1 - number2;
-        double multiplication = number1 * number2;
-        double division = number1 / number2;
+        double areaCm = 0.5 * base * height;
+        double areaIn = areaCm / (2.54 * 2.54);
 
-        System.out.println("The addition, subtraction, multiplication, and division value of 2 numbers "
-                + number1 + " and " + number2 + " is "
-                + addition + ", " + subtraction + ", "
-                + multiplication + ", and " + division);
+        System.out.println("The Area of the triangle in sq in is " + areaIn +
+                " and sq cm is " + areaCm);
     }
 }
