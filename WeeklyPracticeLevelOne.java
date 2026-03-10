@@ -1,16 +1,13 @@
 public class WeeklyPracticeLevelOne {
     public static void main(String[] args) {
 
-        int costPrice = 129;
-        int sellingPrice = 191;
+        int pens = 14;
+        int students = 3;
 
-        int profit = sellingPrice - costPrice;
-        double profitPercentage = (profit / (double) costPrice) * 100;
+        int pensPerStudent = pens / students;
+        int remainingPens = pens % students;
 
-        System.out.println(
-        "The Cost Price is INR " + costPrice + " and Selling Price is INR " + sellingPrice +
-        "\nThe Profit is INR " + profit +
-        " and the Profit Percentage is " + profitPercentage
-        );
+        System.out.println("The Pen Per Student is " + pensPerStudent +
+                           " and the remaining pen not distributed is " + remainingPens);
     }
 }
