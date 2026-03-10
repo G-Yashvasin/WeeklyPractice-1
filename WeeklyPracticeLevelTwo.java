@@ -5,15 +5,19 @@ public class WeeklyPracticeLevelTwo {
 
         Scanner sc = new Scanner(System.in);
 
-        double distanceInFeet;
+        double unitPrice;
+        int quantity;
 
-        System.out.print("Enter distance in feet: ");
-        distanceInFeet = sc.nextDouble();
+        System.out.print("Enter unit price: ");
+        unitPrice = sc.nextDouble();
 
-        double yards = distanceInFeet / 3;
-        double miles = yards / 1760;
+        System.out.print("Enter quantity: ");
+        quantity = sc.nextInt();
 
-        System.out.println("The distance in yards is " + yards +
-                " while the distance in miles is " + miles);
+        double totalPrice = unitPrice * quantity;
+
+        System.out.println("The total purchase price is INR " + totalPrice +
+                " if the quantity " + quantity +
+                " and unit price is INR " + unitPrice);
     }
 }
