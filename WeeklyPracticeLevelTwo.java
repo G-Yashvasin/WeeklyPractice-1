@@ -5,14 +5,15 @@ public class WeeklyPracticeLevelTwo {
 
         Scanner sc = new Scanner(System.in);
 
-        double perimeter;
+        double distanceInFeet;
 
-        System.out.print("Enter the perimeter: ");
-        perimeter = sc.nextDouble();
+        System.out.print("Enter distance in feet: ");
+        distanceInFeet = sc.nextDouble();
 
-        double side = perimeter / 4;
+        double yards = distanceInFeet / 3;
+        double miles = yards / 1760;
 
-        System.out.println("The length of the side is " + side +
-                " whose perimeter is " + perimeter);
+        System.out.println("The distance in yards is " + yards +
+                " while the distance in miles is " + miles);
     }
 }
