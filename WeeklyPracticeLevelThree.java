@@ -5,13 +5,18 @@ public class WeeklyPracticeLevelThree {
 
         Scanner sc = new Scanner(System.in);
 
-        double fahrenheit;
+        double salary, bonus;
 
-        System.out.print("Enter temperature in Fahrenheit: ");
-        fahrenheit = sc.nextDouble();
+        System.out.print("Enter salary: ");
+        salary = sc.nextDouble();
 
-        double celsiusResult = (fahrenheit - 32) * 5 / 9;
+        System.out.print("Enter bonus: ");
+        bonus = sc.nextDouble();
 
-        System.out.println("The " + fahrenheit + " fahrenheit is " + celsiusResult + " celsius");
+        double income = salary + bonus;
+
+        System.out.println("The salary is INR " + salary +
+                " and bonus is INR " + bonus +
+                ". Hence Total Income is INR " + income);
     }
 }
