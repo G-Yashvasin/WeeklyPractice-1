@@ -5,13 +5,13 @@ public class WeeklyPracticeLevelThree {
 
         Scanner sc = new Scanner(System.in);
 
-        double celsius;
+        double fahrenheit;
 
-        System.out.print("Enter temperature in Celsius: ");
-        celsius = sc.nextDouble();
+        System.out.print("Enter temperature in Fahrenheit: ");
+        fahrenheit = sc.nextDouble();
 
-        double fahrenheitResult = (celsius * 9 / 5) + 32;
+        double celsiusResult = (fahrenheit - 32) * 5 / 9;
 
-        System.out.println("The " + celsius + " celsius is " + fahrenheitResult + " fahrenheit");
+        System.out.println("The " + fahrenheit + " fahrenheit is " + celsiusResult + " celsius");
     }
 }
