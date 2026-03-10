@@ -1,12 +1,9 @@
 public class WeeklyPracticeLevelOne {
     public static void main(String[] args) {
 
-        int maths = 94;
-        int physics = 95;
-        int chemistry = 96;
+        double km = 10.8;
+        double miles = km / 1.6;
 
-        double average = (maths + physics + chemistry) / 3.0;
-
-        System.out.println("Sam’s average mark in PCM is " + average);
+        System.out.println("The distance " + km + " km in miles is " + miles);
     }
 }
