@@ -1,13 +1,14 @@
 public class WeeklyPracticeLevelOne {
     public static void main(String[] args) {
 
-        int pens = 14;
-        int students = 3;
+        int courseFee = 125000;
+        double discountRate = 0.10;
 
-        int pensPerStudent = pens / students;
-        int remainingPens = pens % students;
+        double discountAmount = courseFee * discountRate;
+        double discountedPrice = courseFee - discountAmount;
 
-        System.out.println("The Pen Per Student is " + pensPerStudent +
-                           " and the remaining pen not distributed is " + remainingPens);
+        System.out.println("The Course Fee is INR " + courseFee);
+        System.out.println("The Discount Amount is INR " + discountAmount);
+        System.out.println("The Discounted Price the student will pay is INR " + discountedPrice);
     }
 }
